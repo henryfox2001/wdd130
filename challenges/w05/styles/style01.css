@@ -1,0 +1,33 @@
+
+
+#top-img {
+    margin: auto;
+    width: 80%;
+    border: 5px solid green;
+    /*padding: 50px;*/
+}
+
+.top_image {
+    vertical-align: middle;
+    width: 15%;
+    height: 15%;
+
+}
+
+.img-circ {
+    background-color: #737373;
+    margin: auto;
+    width: 80%;
+    border: 3px solid green;
+    padding: 50px;
+}
+
+.img-circle {
+    vertical-align: middle;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 10px solid #444444;
+    
+
+  }
