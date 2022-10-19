@@ -1,0 +1,52 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rock+Salt&display=swap');
+
+body {
+    font-family: Georgia,Times,Times New Roman,serif;
+    text-align: center;
+}
+
+.container {
+    margin: 0px;
+    display: grid;
+    /* align-content: center; */
+    max-width: 1040px;
+    height: 520px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.cherry-image {
+    width: 510px;
+    height: 510px;
+    grid-row: 1/2;
+}
+
+.cherry-text-box {
+    background-color: #b9b8b9;
+    width: 510px;
+    height: 510px;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
+
+.cherry-text {
+    margin: 350px 0px 0px;
+    color: #9c0e11;
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+
+.tart-sweet-text {
+    font-size: 60px;
+    letter-spacing: 15px;
+    word-spacing: 15px;
+    width: 1025px;   
+    grid-column: 1/-1;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    z-index: 1;
+}
