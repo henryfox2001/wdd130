@@ -1,0 +1,196 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rock+Salt&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #D8DAD2;
+    font-family: Nunito, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #c5c8bc;
+}
+
+nav a {
+    text-align: center;
+    color: #4B4F40;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    text-align: center;
+    background-color: #4B4F40;
+    color: #ffffff;
+}
+
+.logo {
+    width: 80px
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 10fr;
+}
+
+.home-title {
+    color: #4B4F40;
+    font-family: 'Rock Salt', 'Nunito', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg h1 {
+    text-align: center;
+}
+
+#hero-msg h4 {
+    text-align: center;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+h2 {
+    color: #4B4F40;
+    margin: 0;
+}
+
+h4 {
+    color: #4B4F40;
+}
+
+.book, .join {
+    background-color: #7f876e;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.book:hover {
+    background-color: #4B4F40;
+    color: #D8DAD2;
+}
+
+.rivers-card {
+    margin: 200px 0;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    margin: 200px 0;
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-cards {
+    margin: 200px 0;
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+.card-img {
+    border: 10px solid #414337
+}
+
+#background {
+    height: 725px;
+    background-color: #a8ac9a;
+    grid-column: 8/10;
+    grid-row: 4/9;
+}
+
+.mountains {
+    margin-top: 60px;
+    padding: 55px 0px 90px 0px;
+    grid-column: 2/7;
+    grid-row: 5/8;
+}
+
+.msg {
+    background-color: #a8ac9a;
+    line-height: 1.5em;
+    padding: 35px;
+    color: #D8DAD2;
+    grid-column: 6/10;
+    grid-row: 6/7;
+}
+
+.msg h2 {
+    color: #4B4F40;
+    background-color: #a8ac9a;
+    line-height: 1.5em;
+    font-family: Nunito, Arial, sans-serif;
+}
+
+.msg p {
+    color: #4B4F40;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.join:hover {
+    background-color: #4B4F40;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #D8DAD2;
+    color: #4B4F40;
+    font-size: 1.2em;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #4B4F40;
+    text-decoration: none;
+    margin-top: 200px;
+}
+
+footer p a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
