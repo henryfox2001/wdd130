@@ -1,7 +1,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url(@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Rock+Salt&display=swap'););
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Rock+Salt&display=swap');
 
 /* --CSS FOR HOME PAGE-- */
 
@@ -199,7 +199,7 @@ footer .social img {
 .grid-faq {
     color: #4B4F40;
     display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
 }
 
 /* TITLE */
