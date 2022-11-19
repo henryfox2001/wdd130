@@ -333,10 +333,16 @@ footer .social img {
     color: #4B4F40;
     text-align: center;
     margin: 0 auto;
-    padding: 200px;
+    padding-top: 200px;
 }
 
+.thank {
+    font-family: Nunito, Arial, sans-serif;
+    font-size: 2rem;
+    color: #4B4F40;
+    text-align: center;
 
+}
 
 #feedback {
     background-color: antiquewhite;
