@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat&family=Rock+Salt&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #F2F8F3;
+    --secondary-color: #9FAA88;
+    --accent1-color: #4b8063;
+    --accent2-color: #18251C;
+    --accent3-color: #FFFFFF;
+  
+    --heading-font: "Rock Salt", "Island Moments";
+    --paragraph-font: Montserrat, "Island Moments", sans-serif;
+  
+    --headline-color-on-white: #36513c;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #36513c; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #9FAA88;
+    --nav-link-color: #18251C;
+    --nav-background-color: #9FAA88;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #4b8063;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: auto 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: var(--paragraph-font);
+    line-height: 1.4;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  1fr;
+
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+
+}
+
+.contact-today {
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+.logo {
+    width: 250px;
+}
+
+.contact-call1{
+    text-align: left;
+}
+
+.main-navigation ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    background: var(--primary-color);
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.main-navigation a {
+    background: var(--nav-background-color);
+    color: var(--nav-link-color);
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    text-align: center;
+    border: 0;
+}
+
+.btn {
+    background: var(--nav-background-color);
+    color: var(--accent2-color);
+    border: #18251C 2px solid;
+}
+
+.main-navigation a:hover {
+    background: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    
+}
+
+#hero-box {
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
+    z-index: -1;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    margin-top: 30px;
+}
+
+.home-title {
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+
+#hero-msg h1, #hero-msg h3 {
+    text-align: center;
+}
+
+h3 {
+    color: var(--accent2-color);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-top: 2rem;
+}

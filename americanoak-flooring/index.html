@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <!-- <link type="text/css" rel="stylesheet" href="styles/style.css"> -->
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>AOF - Home</title>
 </head>
@@ -16,11 +16,10 @@
             <div class="menu-wrapper">
                 <div class="logo-container">
                     <a href="contact.html" class="contact-today">Contact Us, Today</a>
-                    <a id="logo-link" href="index.html">
+                    <a class="logo-link" href="index.html">
                         <img class="logo" src="images/logo-american-oak-site-plan.png" alt="Logo - American Oak Flooring, Inc">
                     </a>
-                    <p>Office: (980) 555-5555</p>
-                    <p>Cell: (704) 555-5555</p>
+                    <p class="contact-call1">Office: (980) 555-5555 <br>Cell: (704) 555-5555</p>
                 </div>
                 <!-- Navigation -->
                 <nav class="main-navigation">
@@ -28,7 +27,7 @@
                         <li class="menu-item"><a href="index.html">Home</a></li>
                         <li class="menu-item"><a href="about.html">About</a></li>
                         <li class="menu-item"><a href="contact.html">Contact</a></li>
-                        <li class="menu-item-btn"><a href="contact.html" class="menu-button">FREE CONSULTATION</a></li>
+                        <li class="menu-item-btn"><a href="contact.html" class="btn">FREE CONSULTATION</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,55 +36,35 @@
         <main>
             <div id="hero">
                 <div id="hero-box">
-                    <img src="images/hero-image-site.jpg" alt="" id="hero-img">
+                    <img id="hero-img" src="images/hero-image-site.jpg" alt="">
                 </div>
                 <div id="hero-msg">
                     <h1 class="home-title">BRING NEW LIFE TO YOUR HOME</h1>
-                    <h3>Your home deserves beautifully flooring, expertly installed!</h3>
-                </div>
-                <div class="icons-grid">
-                    <div class="icons-wrapper">
-                        <div class="icon">
-                            <i class="fa-regular fa-clipboard fa-2x"></i>
-                        </div>
-                        <h4 class="icon-clipboard">
-                            <span>
-                                <strong>Free Consultation</strong>
-                            </span>
-                        </h4>
-                    </div>
-                    <div class="icons-wrapper">
-                        <div class="icon">
-                            <i class="fa-solid fa-tags fa-2x"></i>
-                        </div>
-                        <h4 class="icon-tag">
-                            <span>
-                                <strong>Competitive Prices</strong>
-                            </span>
-                        </h4>
-                    </div>
-                    <div class="icons-wrapper">
-                        <div class="icon">
-                            <i class="fa-solid fa-pen-to-square fa-2x"></i>
-                        </div>
-                        <h4 class="icon-pen-to-square">
-                            <span>
-                                <strong>fully Insured</strong>
-                            </span>
-                        </h4>
-                    </div>
-                    <div class="icons-wrapper">
-                        <div class="icon">
-                            <i class="fa-solid fa-certificate fa-2x"></i>
-                        </div>
-                        <h4 class="icon-certificate">
-                            <span>
-                                <strong>1-Year Warranty</strong>
-                            </span>
-                        </h4>
-                    </div>
+                    <h3 class="home-paragraph">Your home deserves beautifully flooring, expertly installed!</h3>
                 </div>
             </div>
+            <div class="icons-grid">
+                <div class="icons-wrapper">
+                    <div class="icons-box1">
+                        <i class="fa-regular fa-clipboard fa-2x"></i>
+                        <strong>Free Consultation</strong>   
+                    </div>
+                    <div class="icons-box2">
+                        <i class="fa-solid fa-tags fa-2x"></i>
+                        <strong>Competitive Prices</strong>
+                    </div>
+                    <div class="icons-box3">
+                        <i class="fa-solid fa-pen-to-square fa-2x"></i>
+                        <strong>fully Insured</strong>
+                    </div>
+                    <div class="icons-box4">
+                        <i class="fa-solid fa-certificate fa-2x"></i>
+                        <strong>1-Year Warranty</strong>
+                    </div>
+                </div>
+                
+            </div>
+            
             <div class="main-grid">
                 <div class="main-services">
                     <div class="sevices-title">
@@ -101,59 +80,50 @@
                     </div>
                     <!-- Box Section -->
                     <div class="images-boxes">
-                        <div class="image-box">
-                            <img src="images/installation.png" alt="">
+                        <div class="image-box1">
+                            <img class= "box" src="images/installation.png" alt="">
+                            <a class="button" href="#">unfinished hardwood</a>
                         </div>
-                        <div class="button">
-                            <p>unfinished hardwood</p>
-                        </div>
-                        <div class="unfinished-paragraph">
+                            
+                        <!-- <div class="unfinished-paragraph">
                             <p>
                                 <strong>Unfinished Hardwood</strong><br>It can be solid or engineered wood, It is available in many different species of wood in a variety of grades and colors.
                             </p>
+                        </div> -->
+                        <div class="image-box2">
+                            <img class= "box" src="images/prefinished.png" alt="">
+                            <a class="button" href="#">prefinished hardwood</a>
                         </div>
-                        <div class="image-box">
-                            <img src="images/prefinished.png" alt="">
-                        </div>
-                        <div class="button">
-                            prefinished hardwood
-                        </div>
-                        <div class="prefinished-paragraph">
+                        <!-- <div class="prefinished-paragraph">
                             <p>
                                 <strong>Prefinished Hardwood</strong><br>It can be solid or engineered wood, It is already finish hardwood and it is available in many different species of wood in a variety of grades and colors.
                             </p>
+                        </div> -->
+                        <div class="image-box3">
+                            <img class= "box" src="images/laminate.png" alt="">
+                            <a class="button" href="#">laminate</a>
                         </div>
-                        <div class="image-box">
-                            <img src="images/laminate.png" alt="">
-                        </div>
-                        <div class="button">
-                            laminate
-                        </div>
-                        <div class="laminate-paragraph">
+                        <!-- <div class="laminate-paragraph">
                             <p>
                                 <strong>Laminate</strong><br>This option is not real wood, and is made out of Formica with a wood pattern. A laminate floor simulates real wood. This product is easier to maintain and install, as opposed 
                                 to a traditional hardwood floor. A common advantage of a laminate floor is that it may be a more cost-effective solution to a growing problem in your home or business.
                             </p>
+                        </div> -->
+                        <div class="image-box4">
+                            <img class= "box" src="images/lvp.png" alt="">
+                            <a class="button" href="#">luxury vinil plank</a>
                         </div>
-                        <div class="image-box">
-                            <img src="images/lvp.png" alt="">
-                        </div>
-                        <div class="button">
-                            luxury vinil plank
-                        </div>
-                        <div class="lvp-paragraph">
+                        <!-- <div class="lvp-paragraph">
                             <p>
                                 <strong>Luxury Vinil Plank (LVP)</strong><br>As the name implies, Luxury Vinyl Planks look like plank of hardwood floors. They are individual pieces of vinyl (not sheet of vinyl), so they look very similar 
                                 to the real thing. It provides an attractive and durable option for high-traffic areas. The moisture-resistant product offers locking installation.
                             </p>
+                        </div> -->
+                        <div class="image-box5">
+                            <img class= "box" src="images/sanding.png" alt="">
+                            <a class="button" href="#">sand & finishing</a>
                         </div>
-                        <div class="image-box">
-                            <img src="images/sanding.png" alt="">
-                        </div>
-                        <div class="button">
-                            sand & finishing
-                        </div>
-                        <div class="sand-paragraph">
+                        <!-- <div class="sand-paragraph">
                             <p>
                                 <strong>Sanding & Finishing</strong><br>Having your hardwood floors refinished is one of the easiest way to drastically improve the look of your home. There isn’t and easier way to not only improve the beauty 
                                 of your home but also preserve its value. Here are a few of the most common reasons why customers decide to have their floors refinished: • Floors are completely worn and have deep scratches,
@@ -173,14 +143,12 @@
                             <p>* Rubio Monocoat is a penetration sealer with zero shine whatsoever. It is a revolutionary plant-based, hard-wax oil that is 0% VOC. As the name implies, in 1 coat you’ll get color and protection for your wood. 
                                 This result in a durable, water-resistant finish, all while keeping the natural look and feel of the wood.
                             </p>
+                        </div> -->
+                        <div class="image-box6">
+                            <img class= "box" src="images/buffer.png" alt="">
+                            <a class="button" href="#">buffer</a>
                         </div>
-                        <div class="image-box">
-                            <img src="images/buffer.png" alt="">
-                        </div>
-                        <div class="button">
-                            buffer
-                        </div>
-                        <div class="buffer-paragraph">
+                        <!-- <div class="buffer-paragraph">
                             <p>
                                 <strong>Buffering</strong><br>Your hardwood floors are a highly visible aspect of the design of your home, office, or workplace. Left untreated; scratches, moisture, and dents can not only diminish the natural 
                                 beauty of your floors but also damage the wood. Regular preventive maintenance is essential to protect your investment and keep your floors looking their best. We always use the highest quality materials and 
@@ -209,7 +177,7 @@
                             <p>
                             <strong>Eliminate dullness and restore the original look to your flooring with wood floor buffing by American Oak Flooring - Call today for a free estimate!</strong>
                             </p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -217,34 +185,36 @@
 
         <footer>
             <div class="footer-wrapper">
-                <div class="logo-footer-container">
-                    <a id="logo-link-footer" href="index.html">
-                        <img class="logo-footer" src="images/logo-american-oak-site-plan.png" alt="Logo - American Oak Flooring, Inc">
-                    </a>
-                    <a href="about.html" class="about-footer">about</a>
-                    <a href="contact.html" class="about-footer">contact</a>
-                    <a href="site-plan.html" class="about-footer">site-plan</a>
-                </div>
-                <div class="stay-connected">
-                    <p>stay connected</p>
-                </div>
-                <div class="social">
-                    <a href="https://facebook.com" target="_blank">
-                        <img src="images/icon02_facebook.png" alt="fb icon">
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <img src="images/icon02_twitter.png" alt="twitter icon">
-                    </a>
-                    <a href="https://instagram.com" target="_blank">
-                        <img src="images/icon02_instagram.png" alt="instagram.icon">
-                    </a>
-                </div>
-                <div class="contact-footer">
-                    <p>Office: (980) 555-5555</p>
-                    <p>Cell: (704) 555-5555</p>
-                </div>
-                <div class="copyright-footer">
-                    <p>Copyright. All Rights Reserved &copy; 2022</p>
+                <div class="footer-container">
+                    <div class="logo-footer-container">
+                        <a id="logo-link-footer" href="index.html">
+                            <img class="logo-footer" src="images/logo-american-oak-site-plan.png" alt="Logo - American Oak Flooring, Inc">
+                        </a>
+                        <a href="about.html" class="about-footer">about</a>
+                        <a href="contact.html" class="about-footer">contact</a>
+                        <a href="site-plan.html" class="about-footer">site-plan</a>
+                    </div>
+                    <div class="stay-connected">
+                        <p>stay connected</p>
+                    </div>
+                    <div class="social">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/icon02_facebook.png" alt="fb icon">
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="images/icon02_twitter.png" alt="twitter icon">
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="images/icon02_instagram.png" alt="instagram.icon">
+                        </a>
+                    </div>
+                    <div class="contact-footer">
+                        <p class="contact-call2">Office: (980) 555-5555</p>
+                        <p class="contact-call2">Cell: (704) 555-5555</p>
+                    </div>
+                    <div class="copyright-footer">
+                        <p>Copyright. All Rights Reserved &copy; 2022</p>
+                    </div>
                 </div>
             </div>
         </footer>

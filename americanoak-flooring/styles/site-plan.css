@@ -9,8 +9,8 @@ Fonts are separated by a | */
   /* change the values below to your colors from your palette */
   --primary-color: #F2F8F3;
   --secondary-color: #9FAA88;
-  --accent1-color: #4b8063;
-  --accent2-color: #36513c;
+  --accent1-color: #2D4D3C;
+  --accent2-color: #101913;
   --accent3-color: #FFFFFF;
 
   /* change the values below to your chosen font(s) */
@@ -23,7 +23,7 @@ Fonts are separated by a | */
   --paragraph-color-on-white: #36513c; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #9FAA88;
-  --nav-link-color: #36513c;
+  --nav-link-color: #101913;
   --nav-background-color: #9FAA88;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #4b8063;

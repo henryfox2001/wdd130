@@ -41,13 +41,12 @@ nav a {
 }
 nav a:hover {
     background-color: #4B4F40;
-    background-color: #4B4F40;
     color: #ffffff;
 }
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+
 }
 #hero-box {
     grid-column: 1/4;
