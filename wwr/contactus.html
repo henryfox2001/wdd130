@@ -32,17 +32,15 @@
             <div class="paragraph-contactus"><strong>Schedule Your Visit</strong></div>
             
             <div class="container-contactus">
-                <div id="feedback"></div>
-                <form class="contactus-name">
-                <!-- <form action="https://formsubmit.co/8e37599a27373b30df253f1eced84b9e" method="POST" class="contactus-name"> -->
-                    <input type="text" placeholder="Name" class="input" required>
-                    <input type="email" placeholder="Email " class="input" required>
-                    <input type="text" placeholder="Phone " class="input">
-                    <textarea  class="contactus-msg" placeholder="Message" required></textarea>
-                    <!--
+                <!-- <div id="feedback"></div> -->
+                <!-- <form action="/my-hanliing-form-page" class="contactus-name" method="post"> -->
+                <form action="https://formsubmit.co/henryfox2001@gmail.com" method="POST" class="contactus-name">
+                    <input type="text" name="name" placeholder="Full Name " class="input" required>
+                    <input type="email" name="email" placeholder="Email " class="input" required>
+                    <input type="text" name="phone" placeholder="Phone " class="input">
+                    <textarea  name="message" class="contactus-msg" placeholder="Message" required></textarea>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://henryfox2001.github.io/wdd130/wwr/thanks.html">
-                    -->  
                     <button class="btn" type="submit">Send</button>
                 </form>
             </div>
@@ -76,7 +74,7 @@
             </div>
         </footer>
     </div>
-
+<!-- 
     <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
@@ -94,6 +92,7 @@
             document.body.classList.toggle('moveDown');
         });
     </script>
+-->
 
 </body>
 </html>
