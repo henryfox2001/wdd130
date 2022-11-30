@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Montserrat, "Island Moments", sans-serif;}
+:root {
+    --primary-color: #F2F8F3;
+    --secondary-color: #9FAA88;
+    --accent1-color: #2D4D3C;
+    --accent2-color: #101913;
+    --accent3-color: #FFFFFF;
+  
+    --heading-font: "Rock Salt", "Island Moments";
+    --paragraph-font: Montserrat, "Island Moments", sans-serif;
+  
+    --headline-color-on-white: #101913;  /* headlines on a white background */ 
+    --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #2D4D3C; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #9faa88;
+    --nav-link-color: #101913;
+    --nav-background-color: #9faa88;
+    --nav-hover-link-color: #FFFFFF;
+    --nav-hover-background-color: #2D4D3C;
+  }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(242, 248, 243); /* Fallback color */
+  background-color: rgba(242,248,243,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #9FAA88;;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #2D4D3C;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #000000;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn {
+    background: var(--nav-background-color);
+    color: var(--accent2-color);
+    display: block;
+    text-align: center;
+    border: 0;
+    padding: 0.8rem;
+    width: 442px;
+    cursor: pointer;
+}
+#myBtn:hover {
+    background: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+.images-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    grid-gap: 20px;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+/* .box-container1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.box-container2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.box-container3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.box-container4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}*/
+.box-container5 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+/* .box-container6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+} */
+
+</style>
+</head>
+<body>
+    <div class="images-boxes">
+        
+        <div class="box-container5">
+            <div class="image-box5">
+                <img class= "box" src="images/sanding.png" alt="">
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div>
+                        <p>
+                            <strong>Sanding & Finishing</strong>
+                        </p>
+                        <p class="p1">
+                            Having your hardwood floors refinished is one of the easiest way to drastically improve the look of your home. There isn’t and easier way to not only improve the beauty 
+                            of your home but also preserve its value. Here are a few of the most common reasons why customers decide to have their floors refinished: • Floors are completely worn and have deep scratches,
+                        </p>
+                        <ul class="sanding">
+                            <li class="sand-item">Decide to remove carpet of linoleum and refinish the hardwood floors underneath,</li>
+                            <li class="sand-item">Want to change the color of the hardwood floors.</li>
+                        </ul>
+                        <p>
+                            <strong>Phase 1: Sanding</strong>
+                        </p>
+                        <p class="p1">
+                            The first step will be sanding. We will remove old stains, dirt and scratches from the current floor. This will prepare your old wood floor for staining and refinishing. 
+                            Once we complete the sanding process, we will apply the stain color that you previously selected.
+                        </p>
+                        <p>
+                            <strong>Phase 2: Finishing</strong>
+                        </p>
+                        <p class="p1">
+                        The finishing process begins by protecting you newly-sanded woof floor with layers of either and oil-based polyurethane finish, a water-based finish, or Rubio Monocoat*. 
+                            We will discuss all of your options with you, and find the right finish that will make your floor look fantastic for year to come!
+                        </p>
+                        <p>* Rubio Monocoat is a penetration sealer with zero shine whatsoever. It is a revolutionary plant-based, hard-wax oil that is 0% VOC. As the name implies, in 1 coat you’ll get color and protection for your wood. 
+                            This result in a durable, water-resistant finish, all while keeping the natural look and feel of the wood.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trigger/Open The Modal -->
+            <div id="myBtn">
+                SANDING & FINISHING
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+    }
+    </script>
+
+</body>
+</html>
