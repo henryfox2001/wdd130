@@ -36,30 +36,28 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
+
 .menu-wrapper {
     background-color: var(--primary-color);
 }
-
 .logo-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 1.1rem;
 }
-
 .contact-today {
     text-decoration: none;
     color: var(--accent2-color);
+    font-size: 1.3rem;
 }
-
 .logo {
     width: 250px;
 }
-
 .contact-call1{
     text-align: right;
+    padding: 0;
 }
-
 .main-navigation ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -68,9 +66,8 @@ body {
     list-style: none;
     padding: 0;
     margin-top: 20px;
-    
+    font-size: 1.5rem;
 }
-
 .main-navigation a {
     background: var(--nav-background-color);
     color: var(--nav-link-color);
@@ -80,12 +77,10 @@ body {
     padding: 0.8rem;
     border: 0;
 }
-
 .btn {
     background: var(--nav-background-color);
     color: var(--accent2-color);
 }
-
 .main-navigation a:hover {
     background: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
@@ -93,229 +88,67 @@ body {
 
 #hero {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;   
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
 }
-
-#hero-box {
-    grid-column: 1 / 5;
-    grid-row: 1 / 3;
+#hero-box-about {
+    grid-column: 1 /11;
+    grid-row: 1 /2;
     z-index: -1;
+    margin-top: -3px;
 }
-
 #hero-img {
     width: 100%;
+    height: auto;
 }
-
 #hero-msg {
-    grid-column: 1/5;
+    grid-column: 1/11;
     grid-row: 1/2;
+    margin-top: 70px;
 }
-
 .home-title {
     color: var(--headline-color-on-white);
     font-family: var(--heading-font);
     font-size: 3rem;
-    padding-top: 2rem;
-    margin-top: 3rem;
-}
-
-#hero-msg h1, #hero-msg h3 {
     text-align: center;
 }
 
-h3 {
-    color: var(--headline-color-on-white);
-    font-size: 1.5rem;
-    margin: 0;
-    margin-top: 3rem;
+#background {
+    grid-column: 2/10;
+    height: auto;
+    width: 80%;
+    margin-top: -180px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(167, 171, 153);
+    background: rgba(167, 171, 153, 0.7); /* 0.5 opacity */
+    border: #101913 solid 1px;
+    margin-bottom: 80px;
 }
 
-.icons-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+.main-grid {
+    width: 100%;
 }
-.icons-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.5rem;
-    color: var(--accent1-color);
-    margin: 1rem 0 0 0;
-    padding-right: 1.2rem;
-}
-
-.title-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.sevices-title {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-    font-size: 3rem;
+.about-paragraph {
+    grid-column: 2/10;
+    padding: 50px;
+    font-size: 150%;
     text-align: center;
-    grid-column: 1/4;
-    grid-row: 1/2;
-    margin: 3rem 3rem;
+    width: auto;
 }
 
-.sevice-paragraph {
-    width: 85%;
-    color: var(--paragraph-color-on-white);
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0 auto 2rem auto;
-    padding-bottom: 0.1rem;
-    grid-column: 1/4;
-    grid-row: 2/3;
-}
-
-.images-boxes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-    grid-gap: 20px;
-    height: 100%;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-}
-
-.button {
-    background: var(--nav-background-color);
-    color: var(--accent2-color);
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    border: 0;
-    padding: 0.8rem;
-}
-
-.button:hover {
-    background: var(--nav-hover-background-color);
-    color: var(--nav-hover-link-color);
-}
-
-/* Popup container - can be anything you want */
-.popup {
-    /* position: relative; */
-    /* display: inline-block; */
-    /* grid-column: 3/4;
-    grid-row: 2/3; */
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background: #9faa88;
-    color: #2D4D3C;
-    width: 460px;
-    height: 30px;
-    text-align: center;
-    padding: 5px;
-}
-
-.popup:hover {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background: #2D4D3C;
-    color: #FFFFFF;
-}
-
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    height: 550px;
-    width: 600px;
-    background-color: #9faa88;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -300px;
-    font-size: 0.8rem;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 2s;
-    animation: fadeIn 2s;
-}
-
-.buffering {
-    text-align: left;
-}
-
-p{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.p1 {
-    text-align: left;
-}
-
-
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* FOOTER */
 footer {
     width: auto;
     height: auto;
 }
 .footer-wrapper {
     background-color: var(--primary-color);
-    /* height: 100%; */
 }
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
 }
 .footer-logo {
     grid-column: 1/2;
@@ -364,6 +197,7 @@ footer {
     text-align: center;
     font-size: 1.5rem;
     margin-right: 50px;
+    padding-bottom: 30px;
 }
 .copyright-footer {
     grid-column: 2/4;
@@ -372,14 +206,27 @@ footer {
     text-align: left;
 }
 
+/* MEDIA QUERY */
 @media screen and (max-width: 1450px) {
-    .images-boxes {
-        grid-template-columns: repeat(2, 1fr);grid-gap: 10px;
-        margin: 0;
+    #background {
+        margin-top: -110px;
     }
 }
-
+/* iPad 12.9-inch iPad Pro (2021, 2020, 2018, 2017, 2015) - Screen Size - Landscape */
+@media screen and (max-width: 1366px) {
+    #background {
+        margin-top: -155px;
+        width: 90%;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
+}
 @media screen and (max-width: 1304px) {
+    #background {
+        margin-top: -110px;
+    }
+
     .footer-navigation {
         align-self: center;
         justify-self: center;
@@ -399,8 +246,15 @@ footer {
         font-size: 1.6rem;
     }
 }
-
-@media screen and (max-width: 1195px) {
+@media screen and (max-width: 1220px) {
+    .footer-nav a {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1205px) {
+    .main-navigation ul {
+        font-size: 1.2rem;
+    }
     .footer-navigation {
         align-self: center;
         justify-self: center;
@@ -423,48 +277,58 @@ footer {
         margin-top: 50px;
     }
 }
-
+/* iPad 11-inch iPad Pro (2021, 2020, 2018) - Screen Size - Landscape */
+@media screen and (max-width: 1194px) {
+    #background {
+        margin-top: -120px;
+        width: 90%;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
+    .footer-navigation {
+        align-self: center;
+        justify-self: center;
+    }
+    .footer-nav ul {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .footer-nav a {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .footer-nav a:hover {
+        font-size: 1.6rem;
+    }
+    .stay-connected {
+        margin-top: 50px;
+    }
+}
 @media screen and (max-width: 1103px) {
     .icons-wrapper {
         font-size: 0.9rem;
         margin: 1rem 1rem;
     }
     .home-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding-top: 0.7rem;
     }
-    h3 {
-        font-size: 1rem;
-        margin-top: 1rem;
-    }
 }
-
 @media screen and (max-width: 1037px) {
     .main-navigation a {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding: 0.8rem;
     }
-    .icons-wrapper {
-        font-size: 0.9rem;
-        margin: 1rem 1rem;
+    #background {
+        margin-top: -110px;
     }
-    .fa-clipboard {
-        color: var(--accent1-color);
-    }
-    .fa-tags {
-        color: var(--accent1-color);
-    }
-    .fa-pen-to-square {
-        color: var(--accent1-color);
-    }
-    .fa-certificate {
-        color: var(--accent1-color);
-    }
-    .images-boxes {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-        margin: 30px;
-    }
+    .about-paragraph {
+        padding: 50px;
+    } 
     .footer-wrapper {
         background-color: var(--primary-color);
     }
@@ -490,7 +354,56 @@ footer {
         margin: 60px;
     }
 }
+/*  iPad Screen Size 9.7-inch iPad 2 (2011), iPad mini (2012) - Landscape or 
+    iPad 12.9-inch iPad Pro (2021, 2020, 2018, 2017, 2015) - Portrait */
+@media screen and (max-width: 1024px) {
+    #background {
+        margin-top: -130px;
+        width: 90%;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 953px) {
+    .footer-logo-img {
+        width: 100%;
+    }
+}
 
+@media screen and (max-width: 950px) {
+    #background {
+        margin-top: -110px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 850px) {
+    #background {
+        margin-top: -110px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+/*  iPad 10.5-inch iPad Air (2019), 10.5-inch iPad Pro (2017) - Portrait or
+    iPad 11-inch iPad Pro (2021, 2020, 2018) - Screen Size - Portrait */
+@media screen and (max-width: 834px) {
+    #background {
+        margin-top: -120px;
+        width: 90%;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 808px) {
     .logo-container {
         font-size: 0.7rem;
@@ -508,24 +421,49 @@ footer {
         font-size: 1.1rem;
         padding: 0.5rem;
     }
+    #hero-msg {
+        grid-column: 1/11;
+        grid-row: 1/2;
+        margin-top: 50px;
+    }
     .home-title {
         color: var(--headline-color-on-white);
-        font-size: 1rem;
-        padding-top: 0.7rem;
+        font-size: 2.0rem;
+        /* padding-top: 0.5rem; */
     }
-    h3 {
-        color: var(--headline-color-on-white);
-        font-size: .7rem;
-        margin-top: 1rem;
+    #background {
+        margin-top: -110px;
     }
-    .icons-wrapper {
-        font-size: 0.8rem;
-        color: var(--accent1-color);
-        margin: 1rem 1rem;
+    .about-paragraph {
+        padding: 50px;
     }
 }
-
-@media screen and (max-width: 641px) {
+/* iPad Screen Size - Portrait */
+@media screen and (max-width: 768px) {
+    #background {
+        margin-top: -80px;
+        width: 90%;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 736px) {
+    #background {
+        margin-top: -80px;
+        width: 90%;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 648px) {
     .main-navigation ul {
         display: grid;
         grid-template-columns: 1fr;
@@ -535,15 +473,86 @@ footer {
         padding: 0;
         margin-top: 5px;
     }
+    .home-title {
+        color: var(--headline-color-on-white);
+        font-size: 1.5rem;
+        padding-top: 0.1rem;
+    }
+    #background {
+        margin-top: -80px;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
 }
-
 @media screen and (max-width: 607px) {
-    .icons-wrapper {
-        justify-content: space-around;
-        align-items: center;
-        font-size: 0.5rem;
-        color: var(--accent1-color);
-        margin: 1rem 0 0 0;
-        padding-right: 1.2rem;
+    #hero-msg {
+        margin-top: 40px;
+    }
+    #background {
+        margin-top: -80px;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 575px) {
+    #background {
+        margin-top: -70px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 525px) {
+    .about-paragraph {
+        padding: 40px;
+    }
+    #background {
+    margin-top: -70px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+/* iPhone Screen Size - Landscape */
+@media screen and (max-width: 480px) {
+    .about-paragraph {
+        padding: 40px;
+    }
+    #background {
+    margin-top: -70px;
+    width: 90%;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 340px) { 
+    #background {
+        margin-top: -30px;
+        width: 90%;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
+    .footer-logo-img {
+        width: 100%;
+    }
+}
+/* iPhone Screen Size - Portrait */
+@media screen and (max-width: 320px) { 
+    #background {
+        margin-top: -30px;
+        width: 90%;
+    }
+    .about-paragraph {
+        padding: 40px;
+    }
+    .footer-logo-img {
+        width: 100%;
     }
 }
