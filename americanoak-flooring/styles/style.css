@@ -403,7 +403,7 @@ footer {
     
     /* The Modal (background) */
     .modal {
-        padding-top: 800px; /* Location of the box */
+        padding-top: 100px; /* Location of the box */
     }
     .footer-navigation {
         align-self: center;
@@ -462,6 +462,11 @@ footer {
         font-size: 1rem;
         margin-top: 1rem;
     }
+    /* Modal Content */
+    .modal-content {
+        padding: 40px;
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 1037px) {
@@ -489,6 +494,10 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
         margin: 30px;
+    }
+    /* The Modal (background) */
+    .modal {
+        padding-top: 50px; /* Location of the box */
     }
     .footer-wrapper {
         background-color: var(--primary-color);
@@ -548,14 +557,11 @@ footer {
         color: var(--accent1-color);
         margin: 1rem 1rem;
     }
-    /* The Modal (background) */
-    .modal {
-        padding-top: 400px; /* Location of the box */
-    }
+    
     /* Modal Content */
     .modal-content {
-        padding: 50px;
-        width: 80%;
+        padding: 40px;
+        width: 90%;
     }
 }
 
@@ -569,14 +575,11 @@ footer {
         padding: 0;
         margin-top: 5px;
     }
-    /* The Modal (background) */
-    .modal {
-        padding-top: 400px; /* Location of the box */
-    }
+    
     /* Modal Content */
     .modal-content {
-        padding: 50px;
-        width: 80%;
+        padding: 30px;
+        width: 90%;
     }
 }
 
