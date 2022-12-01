@@ -170,120 +170,7 @@ h3 {
     grid-row: 2/3;
 }
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 300px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(242, 248, 243); /* Fallback color */
-    background-color: rgba(242,248,243,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #9FAA88;;
-    margin: auto;
-    padding: 60px;
-    border: 1px solid #2D4D3C;
-    width: 60%;
-}
-
-/* The Close Button */
-.close1,
-.close2,
-.close3,
-.close4,
-.close5,
-.close6 {
-    color: #000000;
-    float: right;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.close1:hover,
-.close1:focus,
-.close2:hover,
-.close2:focus,
-.close3:hover,
-.close3:focus,
-.close4:hover,
-.close4:focus,
-.close5:hover,
-.close5:focus,
-.close6:hover,
-.close6:focus {
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6 {
-    display: block;
-}
-
-.button {
-    background: var(--nav-background-color);
-    color: var(--accent2-color);
-    text-align: center;
-    border: 0;
-    padding: 0.8rem;
-    width: 468px;
-    cursor: pointer;
-    margin-top: -7px;
-}
-
-.button:hover {
-    background: var(--nav-hover-background-color);
-    color: var(--nav-hover-link-color);
-}
-
 .images-boxes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-    grid-gap: 20px;
-    height: 100%;
-    /* text-transform: uppercase; */
-    font-size: 1.2rem;
-}
-
-.box-container1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-.box-container2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-box-container3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-.box-container4 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.box-container5 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-.box-container6 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-/* .images-boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -310,9 +197,77 @@ box-container3 {
 .button:hover {
     background: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
-} */
+}
 
-.dots {
+/* Popup container - can be anything you want */
+.popup {
+    /* position: relative; */
+    /* display: inline-block; */
+    /* grid-column: 3/4;
+    grid-row: 2/3; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #9faa88;
+    color: #2D4D3C;
+    width: 460px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.popup:hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #2D4D3C;
+    color: #FFFFFF;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    height: 550px;
+    width: 600px;
+    background-color: #9faa88;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -300px;
+    font-size: 0.8rem;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+.buffering {
     text-align: left;
 }
 
@@ -323,6 +278,31 @@ p{
 .p1 {
     text-align: left;
 }
+
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     width: auto;
@@ -400,11 +380,6 @@ footer {
 }
 
 @media screen and (max-width: 1304px) {
-    
-    /* The Modal (background) */
-    .modal {
-        padding-top: 800px; /* Location of the box */
-    }
     .footer-navigation {
         align-self: center;
         justify-self: center;
@@ -548,15 +523,6 @@ footer {
         color: var(--accent1-color);
         margin: 1rem 1rem;
     }
-    /* The Modal (background) */
-    .modal {
-        padding-top: 400px; /* Location of the box */
-    }
-    /* Modal Content */
-    .modal-content {
-        padding: 50px;
-        width: 80%;
-    }
 }
 
 @media screen and (max-width: 641px) {
@@ -569,15 +535,6 @@ footer {
         padding: 0;
         margin-top: 5px;
     }
-    /* The Modal (background) */
-    .modal {
-        padding-top: 400px; /* Location of the box */
-    }
-    /* Modal Content */
-    .modal-content {
-        padding: 50px;
-        width: 80%;
-    }
 }
 
 @media screen and (max-width: 607px) {
@@ -588,14 +545,5 @@ footer {
         color: var(--accent1-color);
         margin: 1rem 0 0 0;
         padding-right: 1.2rem;
-    }
-    /* The Modal (background) */
-    .modal {
-        padding-top: 500px; /* Location of the box */
-    }
-    /* Modal Content */
-    .modal-content {
-        padding: 50px;
-        width: 80%;
     }
 }
