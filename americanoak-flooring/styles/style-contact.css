@@ -15,7 +15,7 @@
     --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
     --paragraph-color-on-white: #2D4D3C; /* paragraph text on a white background */ 
     --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
-    --paragraph-background-color: rgb(159, 170, 136);
+    --paragraph-background-color: #9faa88;
     --nav-link-color: #101913;
     --nav-background-color: #9faa88;
     --nav-hover-link-color: #FFFFFF;
@@ -74,7 +74,7 @@ body {
     padding: 0.8rem;
     border: 0;
 }
-.btn {
+.btn1 {
     background: var(--nav-background-color);
     color: var(--accent2-color);
 }
@@ -89,7 +89,7 @@ body {
     grid-template-rows: 1fr;
     text-align: center;
 }
-#hero-box-about {
+#hero-box-contact {
     grid-column: 1 /11;
     grid-row: 1 /2;
     z-index: -1;
@@ -135,6 +135,129 @@ body {
     width: auto;
 }
 
+/* --CSS FOR CONTACT US PAGE-- */
+.grid-contactus {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+    grid-template-rows: 300px 15px 1fr;
+    width: 75%;
+    font-family: 'Nunito';
+    text-align: center;
+    color: #4B4F40;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* TITLE */
+.title-contactus {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    height: 10px;
+    font-family: 'Rock Salt';
+    font-size: 4.5rem;
+    padding: 70px;
+    margin: 0px;
+}
+
+/* SUBTITLE */
+.paragraph-contactus {
+    grid-column: 1/2;
+    grid-row: 2/-1;
+    font-size: 1.5rem;
+    padding: 0 0 0 40px;
+    margin: 0 0 40px;
+    text-align: left;
+}
+
+.container-contactus {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    max-width: 700px;
+    height: 600px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+  .input, .contactus-msg {
+    font-family: var(--paragraph-font);
+    font-size: 14px;
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 2px solid #a8ac9a;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.contactus-msg {
+    height: 250px;
+}
+
+.btn2 {
+    background: var(--nav-background-color);
+    color: var(--nav-link-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    background: var(--secondary-color);
+    height: 50px;
+    line-height: 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  .btn2:hover {
+    background: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+.input:focus, .contactus-msg:focus {
+    outline: none;
+    border-color: #4B4F40;
+}
+
+/* COMPANY'S INFORMATION & TIME */
+.contactus-info {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    font-size: 1.3rem;
+    text-align: left;
+    margin-top: -1rem;
+}
+
+.thank-you {
+    font-family: var(--heading-font);
+    font-size: 3.5rem;
+    color: #4B4F40;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+.thank {
+    font-family: var(--paragraph-font);
+    font-size: 2.5rem;
+    color: #4B4F40;
+    text-align: center;
+    margin: 50px auto;
+}
+.return {
+    font-family: var(--secondary-color);
+    text-align: center;
+    margin-top: 70px;
+    text-decoration: none;
+    margin: 70px auto;
+    font-size: 1.8rem;
+    color: var(--accent2-color)
+}
+a.return:hover, a.return:active {
+    color: var(--nav-background-color);
+    font-size: 1.7rem;
+}
+
 /* FOOTER */
 footer {
     width: auto;
@@ -142,7 +265,7 @@ footer {
 }
 .footer-wrapper {
     background-color: var(--primary-color);
-    margin-top: 70px;
+    margin-top: 220px;
 }
 .footer-container {
     display: grid;
@@ -327,6 +450,9 @@ footer {
     .about-paragraph {
         padding: 50px;
     } 
+    .contactus-info {
+        font-size: 1.1rem;
+    }
     .footer-wrapper {
         background-color: var(--primary-color);
     }
@@ -387,6 +513,9 @@ footer {
     .footer-logo-img {
         width: 100%;
     }
+    .paragraph-contactus {
+        font-size: 1.3rem;
+    }
 }
 /*  iPad 10.5-inch iPad Air (2019), 10.5-inch iPad Pro (2017) - Portrait or
     iPad 11-inch iPad Pro (2021, 2020, 2018) - Screen Size - Portrait */
@@ -445,6 +574,9 @@ footer {
     .about-paragraph {
         padding: 40px;
     }
+    .paragraph-contactus {
+        font-size: 1.1rem;
+    }
     .footer-logo-img {
         width: 100%;
     }
@@ -459,6 +591,11 @@ footer {
     }
     .footer-logo-img {
         width: 100%;
+    }
+}
+@media screen and (max-width: 660px) {
+    .paragraph-contactus {
+        font-size: 0.9rem;
     }
 }
 @media screen and (max-width: 648px) {
@@ -482,6 +619,9 @@ footer {
     .about-paragraph {
         padding: 40px;
     }
+    .contactus-info {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width: 607px) {
     #hero-msg {
@@ -493,6 +633,9 @@ footer {
     .about-paragraph {
         padding: 40px;
     }
+    .contactus-info {
+        font-size: 0.9rem;
+    }
     .footer-logo-img {
         width: 100%;
     }
@@ -500,6 +643,9 @@ footer {
 @media screen and (max-width: 575px) {
     #background {
         margin-top: -70px;
+    }
+    .contactus-info {
+        font-size: 0.8rem;
     }
     .footer-logo-img {
         width: 100%;
@@ -524,6 +670,9 @@ footer {
     #background {
     margin-top: -70px;
     width: 90%;
+    }
+    .contactus-info {
+        font-size: 0.7rem;
     }
     .footer-logo-img {
         width: 100%;

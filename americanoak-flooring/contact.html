@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <!-- <link type="text/css" rel="stylesheet" href="styles/style.css"> -->
+    <link type="text/css" rel="stylesheet" href="styles/style-contact.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"> -->
     <title>AOF - Contact</title>
 </head>
-
 <body>
     <!-- Container Beggins -->
     <div id="container">
@@ -17,25 +16,24 @@
             <div class="menu-wrapper">
                 <div class="logo-container">
                     <a href="contact.html" class="contact-today">Contact Us, Today</a>
-                    <a id="logo-link" href="index.html">
+                    <a class="logo-link" href="index.html">
                         <img class="logo" src="images/logo-american-oak-site-plan.png" alt="Logo - American Oak Flooring, Inc">
                     </a>
-                    <p>Office: (980) 555-5555</p>
-                    <p>Cell: (704) 555-5555</p>
+                    <p class="contact-call1">Office: (980) 555-5555 <br>Cell: (704) 555-5555</p>
                 </div>
                 <!-- Navigation -->
                 <nav class="main-navigation">
                     <ul class="main-menu">
-                        <li class="menu-item"><a href="index.html">Home</a></li>
-                        <li class="menu-item"><a href="about.html">About</a></li>
-                        <li class="menu-item"><a href="contact.html">Contact</a></li>
-                        <li class="menu-item-btn"><a href="contact.html" class="menu-button">FREE CONSULTATION</a></li>
+                        <li class="menu-item"><a href="index.html">HOME</a></li>
+                        <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                        <li class="menu-item"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu-item-btn"><a href="contact.html" class="btn1">FREE CONSULTATION</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <div id="hero">
-            <div id="hero-box">
+            <div id="hero-box-contact">
                 <img id="hero-img" src="images/contact-pic.jpg" alt="People enjoying white water rafting">
             </div>
         </div>
@@ -44,19 +42,15 @@
             <div class="paragraph-contactus"><strong>Schedule Your Visit</strong></div>
             
             <div class="container-contactus">
-                <div id="feedback"></div>
-                <form class="contactus-name">
-                <!-- <form action="https://formsubmit.co/8e37599a27373b30df253f1eced84b9e" method="POST" class="contactus-name"> -->
-                    <input type="text" placeholder="Name" class="input" required>
-                    <input type="email" placeholder="Email " class="input" required>
-                    <input type="text" placeholder="Phone " class="input">
+                <form action="https://formsubmit.co/henryfox2001@gmail.com" method="POST" class="contactus-name">
+                    <input type="text" name="name" placeholder="Name" class="input" required>
+                    <input type="email" name="email" placeholder="Email" class="input" required>
+                    <input type="text" name="phone" placeholder="Phone" class="input">
                     <input type="text" placeholder="Address " class="input">
-                    <textarea  class="contactus-msg" placeholder="Message" required></textarea>
-                    <!--
+                    <textarea  name="message" class="contactus-msg" placeholder="Tell us about your flooring project" required></textarea>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://henryfox2001.github.io/wdd130/wwr/thanks.html">
-                    -->  
-                    <button class="btn" type="submit">Send</button>
+                    <button class="btn2" type="submit">Send</button>
                 </form>
             </div>
             <div class="contactus-info">
@@ -64,7 +58,7 @@
                 <h3 class="contactus-line2">We look forward to meet you soon.</h3>
                 <br>
                 <h3 class="contactus-company-name">American Oak Flooring, Inc</h3>
-                <h3 class="contactus-company-address">Charlotte, North Carolina, United States</h3>
+                <h3 class="contactus-company-address">Charlotte, North Carolina, <br>United States</h3>
                 <h3 class="contactus-company-phone">(704) 555-5550 / sales@americanoakflooring.com</h3>
                 <br>
                 <h3 class="contactus-company-hours">Hours</h3>
@@ -74,59 +68,52 @@
         </main>
         <footer>
             <div class="footer-wrapper">
-                <div class="logo-footer-container">
-                    <a id="logo-link-footer" href="index.html">
-                        <img class="logo-footer" src="images/logo-american-oak-site-plan.png" alt="Logo - American Oak Flooring, Inc">
-                    </a>
-                    
-                    <a href="about.html" class="about-footer">about</a>
-                    <a href="contact.html" class="about-footer">contact</a>
-                    <a href="site-plan.html" class="about-footer">site-plan</a>
-                </div>
-                <div class="stay-connected">
-                    <p>stay connected</p>
-                </div>
-                <div class="social">
-                    <a href="https://facebook.com" target="_blank">
-                        <img src="images/icon02_facebook.png" alt="fb icon">
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <img src="images/icon02_twitter.png" alt="twitter icon">
-                    </a>
-                    <a href="https://instagram.com" target="_blank">
-                        <img src="images/icon02_instagram.png" alt="instagram icon">
-                    </a>
-                </div>
-                <div class="contact-footer">
-                    <p>Office: (980) 555-5555</p>
-                    <p>Cell: (704) 555-5555</p>
-                </div>
-                <div class="copyright-footer">
-                    <p>Copyright. All Rights Reserved &copy; 2022</p>
+                <div class="footer-container">
+                    <div class="footer-container-logo">
+                        <div class="footer-logo">
+                            <a id="logo-link-footer" href="index.html">
+                                <img class="footer-logo-img" src="images/logo-american-oak-site-plan.png" alt="Logo - American Oak Flooring, Inc">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-navigation">
+                        <div class="footer-nav">
+                            <ul class="about-footer">
+                                <li class="footer-menu-item"><a href="index.html">home</a></li>
+                                <li class="footer-menu-item"><a href="about.html">about</a></li>
+                                <li class="footer-menu-item"><a href="site-plan.html">site-plan</a></li>
+                            </ul> 
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="stay-connected">
+                            <p>stay connected</p>
+                        </div>
+                        <div class="social-block">
+                            <div class="social-links">
+                                <a href="https://facebook.com" target="_blank">
+                                    <img class="icon-link" src="images/icon02_facebook.png" width="70" height="70" alt="fb icon">
+                                </a>
+                                <a href="https://twitter.com" target="_blank">
+                                    <img class="icon-link" src="images/icon02_twitter.png" width="70" height="70" alt="twitter icon">
+                                </a>
+                                <a href="https://instagram.com" target="_blank">
+                                    <img class="icon-link" src="images/icon02_instagram.png" width="70" height="70" alt="instagram.icon">
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="contact-footer">
+                        <p class="contact-call2">Office: (980) 555-5555</p>
+                        <p class="contact-call2">Cell: (704) 555-5555</p>
+                    </div>
+                    <div class="copyright-footer">
+                        <p>Copyright. All Rights Reserved &copy; 2022</p>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
     <!-- Container Ends -->
-
-    <!--
-    <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
-    </script>
-    -->
 </body>
 </html>

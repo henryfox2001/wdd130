@@ -314,6 +314,7 @@ footer {
 }
 .footer-wrapper {
     background-color: var(--primary-color);
+    margin-top: 70px;
 }
 .footer-container {
     display: grid;
