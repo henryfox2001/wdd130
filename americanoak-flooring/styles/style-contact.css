@@ -245,7 +245,7 @@ body {
     margin: 50px auto;
 }
 .return {
-    font-family: var(--secondary-color);
+    font-family: var(--paragraph-font);
     text-align: center;
     margin-top: 70px;
     text-decoration: none;
