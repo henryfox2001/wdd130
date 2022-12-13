@@ -88,6 +88,7 @@ body {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
     text-align: center;
+    padding-top: 0.8rem;
 }
 #hero-box-about {
     grid-column: 1 /11;
